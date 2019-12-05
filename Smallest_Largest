@@ -11,7 +11,9 @@ while True:
         continue
     if ival > largest:
        largest = ival
-    if ival < smallest:
+    if smallest is None:
        smallest = ival
+    elif ival < smallest:
+        smallest = ival
 print("Maximum is", largest)
 print("Minimum is", smallest)
