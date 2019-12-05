@@ -1,0 +1,17 @@
+largest = None
+smallest = None
+while True:
+    num = input("Enter a number: ")
+    if num == "done" :
+        break
+    try:
+        ival = int(num)
+    except:
+        print("Invalid input")
+        continue
+    if ival > largest:
+       largest = ival
+    if ival < smallest:
+       smallest = ival
+print("Maximum is", largest)
+print("Minimum is", smallest)
